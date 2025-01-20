@@ -11,6 +11,7 @@
 Office.initialize = async function init()  {
   console.log('init');
   Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+  run();
 }
 
 
