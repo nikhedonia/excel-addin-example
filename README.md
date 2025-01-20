@@ -45,4 +45,11 @@ source: https://learn.microsoft.com/en-us/office/dev/add-ins/testing/sideload-an
 
 The manifest is hosted by the dev server.
 
-When you access the web-based Office app, it automatically(???) uses the manifest URL to load your add-in.
+When you access the web-based Office app, it install a manifest if provided via the URL GET parameters:
+
+```
+https://onedrive.live.com/edit?id=ID_OF_FILE
+&wdaddindevserverport=3000
+&wdaddinmanifestfile=manifest.xml
+&wdaddinmanifestguid=b786e716-9883-44bf-ba81-69ff3370047d&wdo=2&cid=152ae2455ce6c5a6
+```
